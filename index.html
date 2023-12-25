@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 01</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <nav>
+      <h3 class="logo">Bondstein</h3>
       <ul class="sidebar">
-        <li><a href="#">Bondstein</a></li>
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Services</a></li>
@@ -18,14 +32,13 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul>
-        <li><a href="#">Bondstein</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Career</a></li>
-        <li><a href="#">Contact</a></li>
-        <li>
+        <li class="hideOnSmallDevices"><a href="#">Home</a></li>
+        <li class="hideOnSmallDevices"><a href="#">Products</a></li>
+        <li class="hideOnSmallDevices"><a href="#">Services</a></li>
+        <li class="hideOnSmallDevices"><a href="#">About Us</a></li>
+        <li class="hideOnSmallDevices"><a href="#">Career</a></li>
+        <li class="hideOnSmallDevices"><a href="#">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
